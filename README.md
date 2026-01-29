@@ -1,6 +1,7 @@
 # Digihappy support application
 
-The goal is to clear `com.android.chrome` application data to support tablet users.
+The goal is to [clear `com.android.chrome`](https://api.scalefusion.com/api-docs#!/Device_Management/Api_V1_Devices_clear_app_data)
+application data to support tablet users.
 
 ## [Scalefusion Developer API](https://app.scalefusion.com/cloud/dashboard/v3/apis)
 
