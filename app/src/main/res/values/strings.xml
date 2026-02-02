@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SFapi</string>
+    <string name="status_idle">Waiting to fetch device ID...</string>
+    <string name="missing_token_hint">Missing Scalefusion token. Define SCALEFUSION_API_TOKEN in local.properties.</string>
+    <string name="android_id_unavailable">Could not read Android ID from this device.</string>
+    <string name="fetching_from_api">Contacting Scalefusion...</string>
+    <string name="device_id_retrieved">Scalefusion device ID stored.</string>
+    <string name="device_id_already_set">Stored Scalefusion device ID loaded.</string>
+    <string name="api_error_with_code">API call failed (%1$d).</string>
+    <string name="no_match_for_android_id">No device with this Android ID found.</string>
+    <string name="unexpected_error">Unexpected error while calling API.</string>
+    <string name="android_id_label">Android ID</string>
+    <string name="device_id_label">Scalefusion Device ID</string>
+    <string name="retry_button">Retry lookup</string>
+</resources>
