@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <restriction
+        android:key="mdm_device_id"
+        android:title="@string/restriction_title_mdm_device_id"
+        android:restrictionType="string"
+        android:description="@string/restriction_desc_mdm_device_id"
+        android:defaultValue="" />
+
+</restrictions>

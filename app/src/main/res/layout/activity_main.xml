@@ -5,6 +5,11 @@
     android:orientation="vertical"
     android:padding="24dp">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
     <TextView
         android:id="@+id/statusText"
         android:layout_width="match_parent"
@@ -38,21 +43,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="--"
-        android:paddingBottom="24dp"
+        android:paddingBottom="16dp"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="gone" />
 
     <Button
         android:id="@+id/retryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/retry_button" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/debug_label"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:paddingTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="ifContentScrolls">
+
+        <TextView
+            android:id="@+id/debugLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textIsSelectable="true"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:scrollbars="vertical"
+            android:fontFamily="monospace" />
+    </ScrollView>
 
 </LinearLayout>
