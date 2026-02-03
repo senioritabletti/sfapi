@@ -52,6 +52,13 @@
         android:layout_height="wrap_content"
         android:text="@string/retry_button" />
 
+    <Button
+        android:id="@+id/wipeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wipe_button"
+        android:layout_marginTop="8dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

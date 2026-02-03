@@ -5,7 +5,20 @@
         android:key="mdm_device_id"
         android:title="@string/restriction_title_mdm_device_id"
         android:restrictionType="string"
-        android:description="@string/restriction_desc_mdm_device_id"
+        android:defaultValue="" />
+
+    <restriction
+        android:key="aws_endpoint_url"
+        android:title="@string/restriction_title_aws_endpoint_url"
+        android:restrictionType="string"
+        android:description="@string/restriction_desc_aws_endpoint_url"
+        android:defaultValue="" />
+
+    <restriction
+        android:key="aws_api_key"
+        android:title="@string/restriction_title_aws_api_key"
+        android:restrictionType="string"
+        android:description="@string/restriction_desc_aws_api_key"
         android:defaultValue="" />
 
 </restrictions>

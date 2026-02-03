@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var androidIdValue: TextView
     private lateinit var deviceIdValue: TextView
     private lateinit var retryButton: Button
+    private lateinit var wipeButton: Button
     private lateinit var debugLog: TextView
 
     private val debugLines = mutableListOf<String>()
@@ -29,9 +30,11 @@ class MainActivity : AppCompatActivity() {
         androidIdValue = findViewById(R.id.androidIdValue)
         deviceIdValue = findViewById(R.id.deviceIdValue)
         retryButton = findViewById(R.id.retryButton)
+        wipeButton = findViewById(R.id.wipeButton)
         debugLog = findViewById(R.id.debugLog)
 
         retryButton.setOnClickListener { resolveRestrictions() }
+        wipeButton.setOnClickListener { triggerWipe() }
     }
 
     override fun onResume() {
@@ -108,6 +111,11 @@ class MainActivity : AppCompatActivity() {
     private fun logDebug(message: String) {
         debugLines.add(message)
         debugLog.text = debugLines.joinToString("\n")
+    }
+
+    private fun triggerWipe() {
+        logDebug("Sending wipe request via AWS helper...")
+        AwsClient(applicationContext).executeWipe()
     }
 
     companion object {

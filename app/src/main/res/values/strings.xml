@@ -10,4 +10,9 @@
     <string name="debug_label">Debug</string>
     <string name="restriction_title_mdm_device_id">Scalefusion Device ID</string>
     <string name="restriction_desc_mdm_device_id">The unique ID injected by Scalefusion</string>
+    <string name="restriction_title_aws_endpoint_url">AWS Lambda URL</string>
+    <string name="restriction_desc_aws_endpoint_url">HTTPS endpoint for your Lambda/API Gateway</string>
+    <string name="restriction_title_aws_api_key">AWS API Key (APP_AWS_AUTH)</string>
+    <string name="restriction_desc_aws_api_key">The secret key to authorize calls to AWS Lambda</string>
+    <string name="wipe_button">Send wipe to AWS</string>
 </resources>
