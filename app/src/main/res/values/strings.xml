@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SFapi</string>
+    <string name="app_name">Exit Chrome</string>
     <string name="status_idle">Reading managed configuration...</string>
     <string name="restriction_missing">Managed config key mdm_device_id not set.</string>
     <string name="restriction_found">Managed config mdm_device_id: %1$s</string>

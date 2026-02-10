@@ -18,8 +18,8 @@ android {
         applicationId = "com.digihappy.sfapi"
         minSdk = 24
         targetSdk = 36
-        versionCode = 3
-        versionName = "1.1"
+        versionCode = 7
+        versionName = "1.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
